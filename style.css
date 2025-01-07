@@ -3,7 +3,11 @@ body {
     padding: 0;
     /* width: 100vw; */
     height: 100vh;
-    background-color: black;
+    background-color: rgb(26, 25, 25);
+}
+
+.all{
+    margin-right: 50px;
 }
 
 nav {
@@ -114,9 +118,10 @@ nav ul li:hover {
     color: white;
     z-index: -50;
     text-decoration: underline;
-    left:200px;
+    left:40px;
     display: flex;
     width: 500px;
+    position: relative;
 }
 
 .ABOUT_ h3{
@@ -144,11 +149,7 @@ nav ul li:hover {
     top: 800px;
 }
 
-.Projects h2{
-    color: white;
-    z-index: -50;
-    text-decoration: underline
-}
+
 
 #text5{
     color: white;
@@ -171,6 +172,10 @@ nav ul li:hover {
     color: white;
     z-index: -50;
     text-decoration: underline;
+    left:40px;
+    display: flex;
+    width: 500px;
+    position: relative;
 }
 
 #contact h3{
@@ -184,10 +189,9 @@ nav ul li:hover {
     display: flex;
     width: 400px;
     color: white;
-    
     position: absolute;
     justify-content: center;
-    top: 1800px;   
+    top: 2120px;   
     z-index: -50;
 }
 
@@ -218,7 +222,7 @@ nav ul li:hover {
 
 #contact form button {
     padding: 10px 20px;
-    background-color: rgb(30, 144, 255);
+    background-color: #15579a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -227,23 +231,172 @@ nav ul li:hover {
 }
 
 #contact form button:hover {
-    background-color: rgb(0, 123, 255);
+    background-color: #15579a;
 }
 
 #formMessage {
     margin-top: 10px;
     font-size: 16px;
     color: white;
+    top: 2300px;
+    display: flex;
+    position: absolute;
 }
 
 #skills h2{
     color: white;
     z-index: -50;
     text-decoration: underline;
+    left:40px;
+    display: flex;
+    width: 500px;
+    position: relative;
 }
 #skills h3{
     color: white;
     z-index: -50;
     top: 600px;
     font-weight: bold;
+}
+
+.card-row {
+    display: flex;
+    gap: 15px; /* Add space between cards */
+    z-index: -90;
+    justify-content: center;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 115px; /* Adjusted for smaller cards */
+    height: 150px;
+    border:0;
+    perspective: 1000px; /* 3D effect */
+    border-radius: 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #15579a;
+    color: rgb(246, 243, 243);
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
+    background-color: #ffffff;
+    color: rgb(10, 10, 10);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  
+  .flip-card-back  p{
+    font-size: 13px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-info h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .project-info p {
+    font-size: 14px;
+    color: #777;
+  }
+#projects_h2{
+    color: white;
+    z-index: -50;
+    text-decoration: underline;
+    left:40px;
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+footer p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 500px;
+    top:2450px;
+}
+
+.contact_container{
+    left: 50px;
+    position: absolute;
+    top: 1550;
+    margin-top: 0;
+    display: flex;
+}
+
+.flip-card-front img{
+    width: 115px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.flip-card-back p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

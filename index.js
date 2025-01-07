@@ -17,3 +17,12 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     // Clear form fields
     document.getElementById('contactForm').reset();
 });
+
+
+// const cards = document.querySelectorAll('.card');
+
+// cards.forEach(card => {
+//   card.addEventListener('mouseover', () => {
+//     card.classList.toggle('flipped');
+//   });
+// });
